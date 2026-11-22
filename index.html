@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#fff1d9">
+<title>驿站爆仓了</title>
+<style>
+:root{--bg:#f5e9d3;--ad-bg:rgba(20,14,8,.82);--ad-card:#fff6e5;--ad-ink:#3b2a1a;--ad-soft:#7a644e;--ad-edge:#7a4a28;--ad-btn:#e7d6b8;--ad-ok:#36b24a;--ad-ok-edge:#1b6e2b}
+html,body{margin:0;height:100%;background:var(--bg);overflow:hidden;overscroll-behavior:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
+canvas{display:block;touch-action:none}
+#safe-probe{position:fixed;left:0;top:0;width:0;height:0;visibility:hidden;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+.mock-ad{position:fixed;inset:0;background:var(--ad-bg);display:flex;align-items:center;justify-content:center;z-index:10;font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif}
+.mock-ad-box{width:min(300px,84vw);background:var(--ad-card);color:var(--ad-ink);border:3px solid var(--ad-edge);border-radius:6px;padding:20px 18px;text-align:center}
+.mock-ad-tag{font-size:13px;color:var(--ad-soft);margin-bottom:12px}
+.mock-ad-msg{font-size:16px;line-height:1.6;margin-bottom:12px}
+.mock-ad-msg small{font-size:12px;color:var(--ad-soft)}
+.mock-ad-count{font-size:40px;font-weight:bold;margin:6px 0 16px}
+.mock-ad-btn{font:inherit;font-size:15px;padding:10px 18px;border:2px solid var(--ad-edge);border-radius:6px;background:var(--ad-btn);color:var(--ad-ink);cursor:pointer;width:100%}
+.mock-ad-btn.ok{background:var(--ad-ok);color:#fff;border-color:var(--ad-ok-edge)}
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="safe-probe"></div>
+<script src="game.js?v=78c0eb3bc1"></script>
+</body>
+</html>
