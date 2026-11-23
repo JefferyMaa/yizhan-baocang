@@ -1,4 +1,4 @@
-# 驿站装车王 · 网页版（Parcel Station）
+# 装车小站长 · 网页版（Parcel Station）
 
 在线玩：https://jefferymaa.github.io/yizhan-baocang/
 

@@ -4,11 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="theme-color" content="#fff1d9">
-<title>驿站装车王</title>
+<title>装车小站长</title>
 <style>
 :root{--bg:#f5e9d3;--ad-bg:rgba(20,14,8,.82);--ad-card:#fff6e5;--ad-ink:#3b2a1a;--ad-soft:#7a644e;--ad-edge:#7a4a28;--ad-btn:#e7d6b8;--ad-ok:#36b24a;--ad-ok-edge:#1b6e2b}
 html,body{margin:0;height:100%;background:var(--bg);overflow:hidden;overscroll-behavior:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 canvas{display:block;touch-action:none}
+/* 竖屏游戏：窗口比手机宽时（电脑、平板横放）限制成竖屏比例居中，两边露底色；手机竖屏本来就更窄，不受影响 */
+#stage{position:fixed;top:0;bottom:0;left:0;right:0;margin:0 auto;max-width:62vh;overflow:hidden}
+@media (min-aspect-ratio:62/100){#stage{box-shadow:0 0 28px rgba(80,50,20,.18)}}
 #safe-probe{position:fixed;left:0;top:0;width:0;height:0;visibility:hidden;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
 .mock-ad{position:fixed;inset:0;background:var(--ad-bg);display:flex;align-items:center;justify-content:center;z-index:10;font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif}
 .mock-ad-box{width:min(300px,84vw);background:var(--ad-card);color:var(--ad-ink);border:3px solid var(--ad-edge);border-radius:6px;padding:20px 18px;text-align:center}
@@ -21,8 +24,8 @@ canvas{display:block;touch-action:none}
 </style>
 </head>
 <body>
-<canvas id="game"></canvas>
+<div id="stage"><canvas id="game"></canvas></div>
 <div id="safe-probe"></div>
-<script src="game.js?v=69513ccdf3"></script>
+<script src="game.js?v=96c7c7b524"></script>
 </body>
 </html>
